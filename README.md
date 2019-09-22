@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   
-  </a>
+ 
   <p align="center">
     An app that lets you take a survey and matches your answer with other people with similar answers to yours. 
     <br />
