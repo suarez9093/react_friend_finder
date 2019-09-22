@@ -1,12 +1,15 @@
 import React from 'react';
-
+import Body from "./Components/Body";
+import NavBar from "./Components/NavBar";
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <NavBar />
+      <Body />
     </div>
   );
 }
 
 export default App;
+ 
