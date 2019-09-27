@@ -4,7 +4,7 @@ function SignUpForm(props) {
     return (
         <div>
             <div class="signup-form">
-                <form action="/examples/actions/confirmation.php" method="post">
+                <form>
                     <h2>Register</h2>
                     <p className="hint-text">Create your account. It's free and only takes a minute.</p>
                     <div className="form-group">
@@ -49,7 +49,7 @@ function SignUpForm(props) {
                             required="required" /> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-success btn-lg btn-block">Register Now</button>
+                        <button onClick={props.handleClick} className="btn btn-success btn-lg btn-block">Register Now</button>
                     </div>
                 </form>
                 <div className="text-center">Already have an account? <a href="#">Sign in</a></div>

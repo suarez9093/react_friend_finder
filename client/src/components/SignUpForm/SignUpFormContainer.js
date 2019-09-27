@@ -12,11 +12,16 @@ class SignUpFormContainer extends Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     handleChange(event) {
         const { name, value, checked, type } = event.target
         type === "checkbox" ? this.setState({[name] : checked}) : this.setState({ [name] : value})
+    }
+
+    handleClick() {
+        alert("Clicked")
     }
     render () {
         return (
@@ -24,6 +29,7 @@ class SignUpFormContainer extends Component {
                 <SignUpForm 
                     handleChange={this.handleChange}
                     data={this.state}
+                    handleClick={this.handleClick}
                 />
             </div>
         )
