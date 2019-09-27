@@ -8,7 +8,9 @@ class SignUpFormContainer extends Component {
             firstName: "", 
             lastName: "",
             email: "",
-            gender: ""
+            gender: "",
+            city: "",
+            country: ""
         }
 
         this.handleChange = this.handleChange.bind(this)
