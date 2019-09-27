@@ -8,19 +8,15 @@ class SignUpFormContainer extends Component {
             firstName: "", 
             lastName: "",
             email: "",
-            gender: "",
-            city: "",
-            country: ""
+            policy: false
         }
 
         this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event) {
-        const { name, value } = event.target
-        this.setState({
-            [name] : value
-        })
+        const { name, value, checked, type } = event.target
+        type === "checkbox" ? this.setState({[name] : checked}) : this.setState({ [name] : value})
     }
     render () {
         return (
