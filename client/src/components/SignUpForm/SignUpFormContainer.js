@@ -5,7 +5,10 @@ class SignUpFormContainer extends Component {
     constructor () {
         super()
         this.state = {
-            firstName: ""
+            firstName: "", 
+            lastName: "",
+            email: "",
+            gender: ""
         }
 
         this.handleChange = this.handleChange.bind(this)
