@@ -14,14 +14,11 @@ class SurveyContainer extends Component {
         // 3. Update the array
         // 4. Log the new array
         // 5. Not sure if it is this function or another one but must convert the array into an array of numbers
-    
 
-        this.setState(prevState => {
-          return {
-              answers: prevState.answers
-          }
 
-        })
+        // Maybe look into the spread operator 
+
+          let udpatedAnswers = prevState.answers.map(answer => <SurveyComponent handleChange={this.handleChange} />)
 
 
 
