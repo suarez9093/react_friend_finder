@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Friends from "./pages/Friends";
 import Faqs from "./pages/Faqs";
-import Survey from "./components/Survey/SurveyComponent";
+import Survey from "./components/Survey/SurveyContainer";
 
 function App() {
   return (
