@@ -7,8 +7,10 @@ class SurveyContainer extends Component {
         }
 
     handleChange = (event) => {
-        const { name, value, type } = event.target
-        this.setState({ [name]: value })
+       const { name , value } = event.target
+       this.setState(prevState => {
+           answers: [...prevState.answers, value]
+       })
     }
     render() {
         return (
