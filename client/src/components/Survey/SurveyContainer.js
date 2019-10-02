@@ -13,6 +13,7 @@ class SurveyContainer extends Component {
         // 2. Need to set the new value to the [name] : value
         // 3. Update the array
         // 4. Log the new array
+        // 5. Not sure if it is this function or another one but must convert the array into an array of numbers
     
 
         this.setState(prevState => {
@@ -26,9 +27,10 @@ class SurveyContainer extends Component {
 
     }
 
-    handleSomething(event) {
-        const { name, value } = event.target
-        this.setState({[name] : value})
+    handleClick() {
+        // 1. Takes the new array and saves it to the database
+        // 2. Then takes the array and compares it to the other arrays of friends in the database. 
+        // 3. Display the friend with the closests answers
     }
 
     render() {
