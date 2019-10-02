@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import SignUpForm from "./SignUpForm";
 
 class SignUpFormContainer extends Component {
-    constructor () {
+    constructor() {
         super()
         this.state = {
-            firstName: "", 
+            firstName: "",
             lastName: "",
             email: "",
             policy: false
@@ -17,19 +17,22 @@ class SignUpFormContainer extends Component {
 
     handleChange(event) {
         const { name, value, checked, type } = event.target
-        type === "checkbox" ? this.setState({[name] : checked}) : this.setState({ [name] : value})
+        type === "checkbox" ?
+            this.setState({ [name]: checked })
+            :
+            this.setState({ [name]: value })
     }
 
     handleClick() {
         alert("Clicked")
     }
-    render () {
+    render() {
         return (
             <div>
-                <SignUpForm 
+                <SignUpForm
                     handleChange={this.handleChange}
-                    data={this.state}
                     handleClick={this.handleClick}
+                    data={this.state}
                 />
             </div>
         )

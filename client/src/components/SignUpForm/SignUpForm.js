@@ -18,7 +18,6 @@ function SignUpForm(props) {
                                 value={props.data.firstName}
                                 required="required" />
 
-                            <br />
                             <input
                                 type="text"
                                 className="form-control"
@@ -30,7 +29,7 @@ function SignUpForm(props) {
 
                         </div>
                     </div>
-                    <div className="form-group">
+                    {/* <div className="form-group"> */}
                         <input
                             type="email"
                             className="form-control"
@@ -39,7 +38,8 @@ function SignUpForm(props) {
                             onChange={props.handleChange}
                             value={props.data.email}
                             required="required" />
-                    </div>
+                            <br />
+                    {/* </div> */}
                     <div className="form-group">
                         <label className="checkbox-inline">
                             <input 
